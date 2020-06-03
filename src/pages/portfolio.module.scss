@@ -1,0 +1,72 @@
+.posts {
+  list-style-type: none;
+  margin: 0;
+}
+
+.post {
+  margin: 1rem 0;
+
+  a {
+    background: #f4f4f4;
+    color: #232b2b;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background: #e4e4e4;
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  p {
+    color: #777777;
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+}
+
+//portfolio styles//
+
+ol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 0 0;
+  li {
+    list-style-type: none;
+    list-style: none;
+    flex: 47.5%;
+    margin-right: 2.5%;
+    a {
+      text-decoration: none;
+      color: #232b2b;
+    }
+  }
+}
+
+.iconWrap {
+  display: flex;
+  align-items: center;
+}
+
+.git {
+  color: #05b993;
+}
+
+.cloud {
+  color: #7758f0;
+}
+
+.youTube {
+  color: #c4302b;
+}
+
+@media (max-width: 550px) {
+  ol {
+    flex-direction: column;
+  }
+}
