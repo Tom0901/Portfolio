@@ -1,10 +1,13 @@
 import React, { useRef, useEffect } from "react"
-import { FaGithubAlt, FaCloud, FaYoutube } from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
-import portfolioStyles from "./portfolio.module.scss"
-import { TweenMax, Power3, TimelineLite } from "gsap"
 import Head from "../components/head"
+//GSAP
+import { TweenMax, Power3, TimelineLite } from "gsap"
+//icons
+import { FaGithubAlt, FaCloud, FaYoutube } from "react-icons/fa"
+//css module
+import portfolioStyles from "./portfolio.module.scss"
 
 //GraphQl Query
 const PortfolioPage = () => {

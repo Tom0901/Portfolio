@@ -1,0 +1,78 @@
+.titleUnderline {
+  border-bottom: 3px solid #05b993;
+  padding-bottom: 1.45rem !important;
+}
+
+//skills layout
+
+h2 {
+  margin-top: 7%;
+}
+
+.skillGrid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.HtmlCss {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Js {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Db {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill {
+  font-size: 3.5rem;
+  margin-right: 0.5rem;
+}
+
+.Html {
+  color: #e34c26;
+}
+.Css {
+  color: #264de4;
+}
+
+.Sass {
+  color: #cd6799;
+}
+
+.Bootsrap {
+  color: #563d7c;
+}
+
+.JsSkill {
+  color: #ffff00;
+}
+
+.React {
+  color: #61dbfb;
+}
+
+.Gatsby {
+  color: #663399;
+}
+
+.Node {
+  color: #68a063;
+}
+
+.Graph {
+  color: #e535ab;
+}
+
+.Sql {
+  color: #00758f;
+}
+
+.Db {
+  color: #4db33d;
+}
