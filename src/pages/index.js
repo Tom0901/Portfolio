@@ -11,26 +11,26 @@ import portfolioStyles from "./portfolio.module.scss"
 
 //GraphQl Query
 const PortfolioPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      allContentfulPortfolioItem {
-        edges {
-          node {
-            title
-            description
-            address
-            host
-            demo
-            img {
-              resize(width: 1920) {
-                src
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     allContentfulPortfolioItem {
+  //       edges {
+  //         node {
+  //           title
+  //           description
+  //           address
+  //           host
+  //           demo
+  //           img {
+  //             resize(width: 1920) {
+  //               src
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   //gsap animation on load
 
@@ -59,7 +59,7 @@ const PortfolioPage = () => {
           grid = el
         }}
       >
-        {data.allContentfulPortfolioItem.edges.map(edge => {
+        {/* {data.allContentfulPortfolioItem.edges.map(edge => {
           //evaluate if we have a hosted version//
 
           return (
@@ -71,7 +71,7 @@ const PortfolioPage = () => {
               >
                 <img
                   src={edge.node.img.resize.src}
-                  alt="these are not the imgs you're lookign for"
+                  alt="these are not the imgs you're looking for"
                 ></img>
                 <h2>{edge.node.title}</h2>
                 <p>{edge.node.description}</p>
@@ -101,7 +101,7 @@ const PortfolioPage = () => {
               </a>
             </li>
           )
-        })}
+        })} */}
       </ol>
     </Layout>
   )
