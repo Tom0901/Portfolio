@@ -27,26 +27,26 @@ import contactStyles from "./about.module.scss"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 const AboutPage = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     allContentfulBlogStylePageContentBodyRichTextNode {
-  //       edges {
-  //         node {
-  //           json
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-
+  const data = useStaticQuery(graphql`
+    query{
+      allContentfulBlogStylePageContentAboutDescriptionRichTextNode{
+        edges{
+          node
+        {
+          json
+        }
+        }
+      }
+    }
+  `)
   return (
     <Layout>
       <Head pageTitle="About" />
       <h1 className={contactStyles.titleUnderline}>About Me</h1>
-      {/* {documentToReactComponents(
-        data.allContentfulBlogStylePageContentBodyRichTextNode.edges[0].node
+      {documentToReactComponents(
+        data.allContentfulBlogStylePageContentAboutDescriptionRichTextNode.edges[0].node
           .json
-      )} */}
+      )}
       <h2>Skills...</h2>
       <div className={contactStyles.skillGrid}>
         <div className={contactStyles.HtmlCss}>
